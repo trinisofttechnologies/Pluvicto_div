@@ -1,16 +1,7 @@
 var app = {};
 $(document).ready(function () {
-    var ipad_route = ["iCVA Navigator-1-20", "iCVA Navigator-21-32"];
+    var ipad_route = ["iCVA Navigator-1-20", "iCVA Navigator-21-32","iCVA Navigator-33-53"];
     var presentationID = "FA-11383644_content";
-
-    function routing_to(index) {
-        if (app.debug) {
-            fileName = "../" + ipad_route[index] + "/index.html";
-            document.location = fileName;
-        } else {
-            com.veeva.clm.gotoSlide(ipad_route[index] + ".zip", presentationID);
-        }
-    }
 
     app.debug = false;
     try {
@@ -23,6 +14,16 @@ $(document).ready(function () {
     function getUserID(result) {
         app.debug = !result.success;
     }
+
+    function routing_to(index) {
+        if (app.debug) {
+            fileName = "../" + ipad_route[index] + "/index.html";
+            document.location = fileName;
+        } else {
+            com.veeva.clm.gotoSlide(ipad_route[index] + ".zip", presentationID);
+        }
+    }
+
     // if (com.veeva.clm.getAppVersion().success) {
     //     app.debug = false;
     // } else {
@@ -90,7 +91,7 @@ $(document).ready(function () {
         if (pageNo == 23) {
             $(".sonar-wrappernative").css({ "display": "none" });
         }
-        loadPage(pageNo)
+        loadPage(pageNo);
     });
 
     $("#ipad_button_back").bind(tarEvent, function () {

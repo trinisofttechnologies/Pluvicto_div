@@ -1,5 +1,8 @@
 var app = {};
 $(document).ready(function () {
+    var ipad_route = ["iCVA Navigator-1-20", "iCVA Navigator-21-32","iCVA Navigator-33-53"];
+    var presentationID = "FA-11383644_content";
+
     app.debug = false;
     try {
         com.veeva.clm.getDataForCurrentObject("User", "ID", getUserID);
@@ -10,6 +13,15 @@ $(document).ready(function () {
 
     function getUserID(result) {
         app.debug = !result.success;
+    }
+
+    function routing_to(index) {
+        if (app.debug) {
+            fileName = "../" + ipad_route[index] + "/index.html";
+            document.location = fileName;
+        } else {
+            com.veeva.clm.gotoSlide(ipad_route[index] + ".zip", presentationID);
+        }
     }
     // if (com.veeva.clm.getAppVersion().success) {
     //     app.debug = false;
@@ -180,7 +192,7 @@ $(document).ready(function () {
     }
 
     // setTimeout(function(){
-        
+
     // },20000)
 
     laserBtn.addEventListener('click', trackingLaser);
@@ -819,18 +831,19 @@ $(document).ready(function () {
                 $(".button_img_s32").animate({ opacity: "1", bottom: "80px" }, 1500);
             }, 3500);
         } else if (pageNo == 33) {
-            com.veeva.clm.gotoSlide("Paragard-iVis v2.zip", "FA-11383644_content");
-            video_element = document.getElementsByClassName('speaker_img_s33')[0];
-            video_element.play();
-            $(".page_content[slideId='" + pageNo + "']").css({ "background": "url(./media/images/FrontSlide.png) no-repeat", "background-size": "100%", "display": "block" });
-            $(".speaker_img_s33").animate({ opacity: "1" }, 2500);
-            setTimeout(function () {
-                $(".message_img_s33").animate({ opacity: "1", left: "20px" }, 1500);
-            }, 1000);
+            routing_to(2);
+            // com.veeva.clm.gotoSlide("Paragard-iVis v2.zip", "FA-11383644_content");
+            // video_element = document.getElementsByClassName('speaker_img_s33')[0];
+            // video_element.play();
+            // $(".page_content[slideId='" + pageNo + "']").css({ "background": "url(./media/images/FrontSlide.png) no-repeat", "background-size": "100%", "display": "block" });
+            // $(".speaker_img_s33").animate({ opacity: "1" }, 2500);
+            // setTimeout(function () {
+            //     $(".message_img_s33").animate({ opacity: "1", left: "20px" }, 1500);
+            // }, 1000);
 
-            setTimeout(function () {
-                $(".button_img_s33").animate({ opacity: "1", bottom: "80px" }, 1500);
-            }, 3500);
+            // setTimeout(function () {
+            //     $(".button_img_s33").animate({ opacity: "1", bottom: "80px" }, 1500);
+            // }, 3500);
         } else if (pageNo == 34) {
             video_element = document.getElementsByClassName('speaker_img_s34')[0];
             video_element.play();
