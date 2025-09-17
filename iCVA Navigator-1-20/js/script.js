@@ -1,5 +1,17 @@
 var app = {};
 $(document).ready(function () {
+    var ipad_route = ["iCVA Navigator-1-20", "iCVA Navigator-21-32"];
+    var presentationID = "FA-11383644_content";
+
+    function routing_to(index) {
+        if (app.debug) {
+            fileName = "../" + ipad_route[index] + "/index.html";
+            document.location = fileName;
+        } else {
+            com.veeva.clm.gotoSlide(ipad_route[index] + ".zip", presentationID);
+        }
+    }
+
     app.debug = false;
     try {
         com.veeva.clm.getDataForCurrentObject("User", "ID", getUserID);
@@ -180,7 +192,7 @@ $(document).ready(function () {
     }
 
     // setTimeout(function(){
-        
+
     // },20000)
 
     laserBtn.addEventListener('click', trackingLaser);
@@ -668,7 +680,7 @@ $(document).ready(function () {
                 $(".button_img_s20").animate({ opacity: "1", bottom: "80px" }, 1500);
             }, 3500);
         } else if (pageNo == 21) {
-            com.veeva.clm.gotoSlide("Paragard-iVis v2.zip", "FA-11383644_content");
+            routing_to(1);
             // enable_disable_Laser(false, "page_content_20");
             // $(".sonar-wrappernative").css({ "display": "none" });
             // video_element = document.getElementsByClassName('speaker_img_s21')[0];
