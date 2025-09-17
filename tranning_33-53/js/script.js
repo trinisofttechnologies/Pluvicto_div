@@ -1,6 +1,6 @@
 var app = {};
 $(document).ready(function () {
-    var ipad_route = ["iCVA Navigator-1-20", "iCVA Navigator-21-32","iCVA Navigator-33-53"];
+    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53"];
     var presentationID = "FA-11383644_content";
 
     app.debug = false;
@@ -1532,5 +1532,5 @@ $(document).ready(function () {
             }, 3500);
         }
     }
-    loadPage(33);
+    loadPage(38);
 });
