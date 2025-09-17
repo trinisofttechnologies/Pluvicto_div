@@ -143,10 +143,10 @@ var shared = {
 Please see full <a href="https://www.novartis.com/us-en/sites/novartis_us/files/pluvicto.pdf">Prescribing Information</a>.</b>
 
 <div>
-			<img id="novartisLogo" src="../shared/media/images/Novartis_logo_VM_page.png" alt=""/></p>
+			<img id="novartisLogo" src="shared/media/images/Novartis_logo_VM_page.png" alt=""/></p>
 	
 		
-			<img id="pluvicto_logo" src="../shared/media/images/brand_logo1.png" alt=""/>
+			<img id="pluvicto_logo" src="shared/media/images/brand_logo1.png" alt=""/>
 		
 	</div>
 
@@ -1011,7 +1011,7 @@ function createglobal() {
 
   // pi functionality
   $("#open_pi").bind(tarEvent, function () {
-    document.location.href = "../shared/media/pdfs/pi_pluvicto.pdf";
+    document.location.href = "shared/media/pdfs/pi_pluvicto.pdf";
   });
 
   // footer arrows functionality
@@ -1697,7 +1697,7 @@ $(document).ready(function () {
     } else if (fileType == "video") {
       video_ele = document.getElementById("resource_video");
       global_swipe = false;
-      video_src.src = "../shared/media/videos/" + $(this).attr("data-target");
+      video_src.src = "shared/media/videos/" + $(this).attr("data-target");
       $("#video_popup").css("display", "flex");
       $("#resource_video").show();
       //video_ele.load();

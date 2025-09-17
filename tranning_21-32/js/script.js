@@ -316,7 +316,7 @@ $(document).ready(function () {
             video_element.pause()
             video_ele = document.getElementById("resource_video");
             global_swipe = false;
-            video_src.src = "../shared/media/videos/" + $(this).attr("data-target");
+            video_src.src = "shared/media/videos/" + $(this).attr("data-target");
             console.log(video_src);
             popModal = $(this).attr("pop-modal");
             console.log(popModal);
