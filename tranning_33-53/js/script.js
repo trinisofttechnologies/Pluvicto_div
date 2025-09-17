@@ -1,6 +1,6 @@
 var app = {};
 $(document).ready(function () {
-    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53"];
+    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53","tranning_54-57"];
     var presentationID = "FA-11383644_content";
 
     app.debug = false;
@@ -1128,14 +1128,15 @@ $(document).ready(function () {
                 }, 2500);
             }
         } else if (pageNo == 54) {
-            video_element = document.getElementsByClassName('speaker_img_s54')[0];
-            video_element.play();
-            $(".speaker_img_s54").animate({ opacity: "1" }, 2500);
-            $(".sonar-wrappernative").css({ "display": "none" });
-            $(".sonar-wrapper1").css({ "top": "727px", "left": "80px" });
-            setTimeout(function () {
-                $(".message_img_s54").animate({ opacity: "1", right: "220px" }, 1500);
-            }, 1000);
+            routing_to(3);
+            // video_element = document.getElementsByClassName('speaker_img_s54')[0];
+            // video_element.play();
+            // $(".speaker_img_s54").animate({ opacity: "1" }, 2500);
+            // $(".sonar-wrappernative").css({ "display": "none" });
+            // $(".sonar-wrapper1").css({ "top": "727px", "left": "80px" });
+            // setTimeout(function () {
+            //     $(".message_img_s54").animate({ opacity: "1", right: "220px" }, 1500);
+            // }, 1000);
         } else if (pageNo == 55) {
             video_element = document.getElementsByClassName('speaker_img_s55')[0];
             video_element.play();
