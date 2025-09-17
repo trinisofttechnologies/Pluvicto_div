@@ -822,18 +822,18 @@ $(document).ready(function () {
                 $(".message_img_s31").animate({ opacity: "1", right: "265px" }, 1500);
             }, 1000);
         } else if (pageNo == 32) {
-            video_element = document.getElementsByClassName('speaker_img_s32')[0];
-            video_element.play();
-            $(".speaker_img_s32").animate({ opacity: "1" }, 1500);
-            setTimeout(function () {
-                $(".message_img_s32").animate({ opacity: "1", left: "440px" }, 1500);
-            }, 1000);
+            routing_to(1);
+            // video_element = document.getElementsByClassName('speaker_img_s32')[0];
+            // video_element.play();
+            // $(".speaker_img_s32").animate({ opacity: "1" }, 1500);
+            // setTimeout(function () {
+            //     $(".message_img_s32").animate({ opacity: "1", left: "440px" }, 1500);
+            // }, 1000);
 
-            setTimeout(function () {
-                $(".button_img_s32").animate({ opacity: "1", bottom: "80px" }, 1500);
-            }, 3500);
+            // setTimeout(function () {
+            //     $(".button_img_s32").animate({ opacity: "1", bottom: "80px" }, 1500);
+            // }, 3500);
         } else if (pageNo == 33) {
-            com.veeva.clm.gotoSlide("Paragard-iVis v2.zip", "FA-11383644_content");
             video_element = document.getElementsByClassName('speaker_img_s33')[0];
             video_element.play();
             $(".page_content[slideId='" + pageNo + "']").css({ "background": "url(./media/images/FrontSlide.png) no-repeat", "background-size": "100%", "display": "block" });
