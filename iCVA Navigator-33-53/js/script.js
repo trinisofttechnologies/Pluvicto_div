@@ -1532,5 +1532,5 @@ $(document).ready(function () {
             }, 3500);
         }
     }
-    loadPage(50);
+    loadPage(33);
 });

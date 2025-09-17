@@ -670,15 +670,16 @@ $(document).ready(function () {
                 // $(".message_img").animate({ left: "34vh" }, 1000);
             }, 1000);
         } else if (pageNo == 20) {
+            routing_to(0);
             // video_element = document.getElementsByClassName('speaker_img_s20')[0];
             // video_element.play();
-            var leftcount = parseInt($("#ipad_button_marker").css("left"));
-            $(".sonar-wrappernative").css({ "top": "0px", "left": leftcount, "display": "block" });
-            $(".speaker_img_s20").animate({ opacity: "1" }, 1500);
-            // $(".sonar-wrapper1").css({ "top": "15px", "left": "50px" });
-            setTimeout(function () {
-                $(".button_img_s20").animate({ opacity: "1", bottom: "80px" }, 1500);
-            }, 3500);
+            // var leftcount = parseInt($("#ipad_button_marker").css("left"));
+            // $(".sonar-wrappernative").css({ "top": "0px", "left": leftcount, "display": "block" });
+            // $(".speaker_img_s20").animate({ opacity: "1" }, 1500);
+            // // $(".sonar-wrapper1").css({ "top": "15px", "left": "50px" });
+            // setTimeout(function () {
+            //     $(".button_img_s20").animate({ opacity: "1", bottom: "80px" }, 1500);
+            // }, 3500);
         } else if (pageNo == 21) {
             enable_disable_Laser(false, "page_content_20");
             $(".sonar-wrappernative").css({ "display": "none" });
