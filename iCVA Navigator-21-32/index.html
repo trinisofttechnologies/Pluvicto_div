@@ -1,0 +1,392 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=1024, height=768, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <title>iCVA Navigator</title>
+    <!-- Global CSS -->
+    <link href="shared/css/reset.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="shared/css/fonts.css" type="text/css" rel="stylesheet" media="all" />
+    <link href="shared/css/global_traning.css" type="text/css" rel="stylesheet" media="all" />
+    <!-- Page level CSS -->
+    <link href="./css/style.css" type="text/css" rel="stylesheet" />
+
+    <!-- Global JS -->
+    <script type="text/javascript" src="shared/js/jquery.3.4.1.min.js"></script>
+
+    <!-- Veeva JS -->
+    <script type="text/javascript" src="shared/js/veeva_js/veeva-library.js"></script>
+    <script type="text/javascript" src="shared/js/veeva_js/veeva_tranning.js"></script>
+
+    <script type="text/javascript" src="shared/js/custom_svg_icons.js"></script>
+    <script type="text/javascript" src="shared/js/global_traning.js"></script>
+    <!-- <script type="text/javascript" src="shared/js/globalswipe.js"></script> -->
+    <!-- <script type="text/javascript" src="shared/js/html5.js"></script> -->
+    <script type="text/javascript" src="shared/js/iscroll.js"></script>
+    <script type="text/javascript" src="shared/js/jqswipe.js"></script>
+</head>
+
+<body>
+    <div id="ipad_div_menu">
+        <div class="sonar-wrappernative">
+            <div class="sonar-emitter">
+                <div class="sonar-wave"></div>
+                <div class="sonar-wave1"></div>
+            </div>
+        </div>
+        <img src="./media/images/VeevaMenu.png" class="ipad_image_menu">
+        <div id="ipad_button_menu" class="ipad_native_button"></div>
+        <div id="ipad_button_marker" class="ipad_native_button"></div>
+        <div id="ipad_button_back" class="ipad_native_button"></div>
+        <div id="ipad_button_blue" class="ipad_native_button"></div>
+        <div id="ipad_button_white" class="ipad_native_button"></div>
+        <div id="ipad_button_red" class="ipad_native_button"></div>
+    </div>
+    <div class="container">
+        <div id="touchCursor" style="display: none;"></div>
+        <div class="page_content" slideId="21">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <div id="isi_popup" class="popup" style="left: 0px; opacity: 1; display: none;">
+                <div id="isi_overlay" class="popup_overlay popup_overlay_21"></div>
+                <div id="isi_bg" class="popup_bg_s21">
+                    <div class="sonar-wrapper21">
+                        <div class="sonar-emitter">
+                            <div class="sonar-wave"></div>
+                            <div class="sonar-wave1"></div>
+                        </div>
+                    </div>
+                    <div id="isi_content_wrapper" class="popup_content_wrapper popup_scroll_props">
+                        <div id="isi_content" class="popup_scroll_content">
+                            <div class="indication_wrapper">
+                                <p class="isi_header">Indication</p>
+                                <section class="indi_section_1">
+                                    <p class="isi_text">PLUVICTO® (lutetium Lu 177 vipivotide tetraxetan) is indicated
+                                        for the treatment of adult patients with prostate-specific membrane antigen
+                                        <nobr>(PSMA)-positive</nobr> metastatic castration-resistant prostate cancer
+                                        (mCRPC) who have been treated with androgen receptor pathway inhibition (ARPI)
+                                        therapy, and
+                                    </p>
+                                    <ul class="isi_list">
+                                        <li>are considered appropriate to delay taxane-based chemotherapy, or</li>
+                                        <li>have received prior taxane-based chemotherapy</li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="isi_wrapper isi_wrapper_21">
+                                <p class="isi_header">IMPORTANT SAFETY INFORMATION</p>
+                                <section class="isi_section_1">
+                                    <p class="isi_sub_header">Risk From Radiation Exposure</p>
+                                    <p class="isi_text">PLUVICTO contributes to a patient’s long-term cumulative
+                                        radiation exposure, which is associated with an increased risk for cancer.</p>
+                                    <p class="isi_text">Minimize radiation exposure to patients, medical personnel, and
+                                        others during and after treatment with PLUVICTO consistent with institutional
+                                        practices, patient treatment procedures, Nuclear Regulatory Commission
+                                        patient-release guidance, and instructions to the patient for follow-up
+                                        radiation protection.</p>
+                                    <p class="isi_text">Ensure patients increase oral fluid intake and advise them to
+                                        void as often as possible to reduce bladder radiation.</p>
+                                    <p class="isi_text">To minimize radiation exposure to others, advise patients to
+                                        limit close contact (less than <nobr>3 feet)</nobr> with household contacts for
+                                        2 days or with children and pregnant women for <nobr>7 days</nobr>, to refrain
+                                        from sexual activity for 7 days, and to sleep in a separate bedroom from
+                                        household contacts for 3 days, from children for 7 days, or from pregnant women
+                                        for <nobr>15 days.</nobr>
+                                    </p>
+
+                                </section>
+
+                                <section class="isi_section_2">
+                                    <p class="isi_sub_header">Myelosuppression</p>
+                                    <p class="isi_text">PLUVICTO can cause severe and life-threatening myelosuppression.
+                                        In the PSMAfore study, grade 3 or 4 decreased hemoglobin (7%), decreased
+                                        leukocytes (4.4%), decreased neutrophils (3.5%), and decreased platelets (2.7%)
+                                        occurred in patients treated with PLUVICTO. One death occurred due to bone
+                                        marrow failure during long-term follow-up in a patient who received PLUVICTO. In
+                                        the VISION study, 4 myelosuppression-related deaths occurred. </p>
+                                    <p class="isi_text">Perform complete blood counts before and during treatment with
+                                        PLUVICTO. Withhold, reduce dose, or permanently discontinue PLUVICTO based on
+                                        severity of myelosuppression.</p>
+
+                                </section>
+
+                                <section class="isi_section_3">
+                                    <p class="isi_sub_header">Renal Toxicity</p>
+                                    <p class="isi_text">PLUVICTO can cause severe renal toxicity. In the PSMAfore study,
+                                        grade 3 or 4 acute kidney injury (1.3%) occurred in patients treated with
+                                        PLUVICTO.</p>
+                                    <p class="isi_text">Advise patients to remain well hydrated and to urinate
+                                        frequently before and after administration of PLUVICTO. Perform kidney function
+                                        laboratory tests, including serum creatinine and calculated creatinine clearance
+                                        (CrCl), before and during treatment. Withhold, reduce dose, or permanently
+                                        discontinue PLUVICTO based on severity of renal toxicity.</p>
+
+                                </section>
+
+                                <section class="isi_section_4">
+                                    <p class="isi_sub_header">Embryo-Fetal Toxicity</p>
+                                    <p class="isi_text">The safety and efficacy of PLUVICTO have not been established in
+                                        females. Based on its mechanism of action, PLUVICTO can cause fetal harm. No
+                                        animal studies using lutetium Lu 177 vipivotide tetraxetan have been conducted
+                                        to evaluate its effect on female reproduction and embryo-fetal development;
+                                        however, radioactive emissions, including those from PLUVICTO, can cause fetal
+                                        harm. Advise males with female partners of reproductive potential to use
+                                        effective contraception during treatment with PLUVICTO and for 14 weeks after
+                                        the last dose.</p>
+
+
+                                </section>
+
+                                <section class="isi_section_4">
+                                    <p class="isi_sub_header">Infertility</p>
+                                    <p class="isi_text">The recommended cumulative dose of 44.4 GBq of PLUVICTO results
+                                        in a <nobr>radiation-absorbed</nobr> dose to the testes within the range where
+                                        PLUVICTO may cause temporary or permanent infertility.</p>
+
+
+                                </section>
+
+                                <section class="isi_section_4">
+                                    <p class="isi_sub_header">Adverse Reactions and Laboratory Abnormalities</p>
+                                    <p class="isi_text">In the pooled safety population for the PSMAfore and VISION
+                                        studies (N=756), the most common (≥20%) adverse reactions, including laboratory
+                                        abnormalities, were decreased lymphocytes (83%), decreased hemoglobin (65%),
+                                        fatigue (49%), dry mouth (46%), decreased platelets (40%), decreased estimated
+                                        glomerular filtration rate (37%), nausea (35%), decreased neutrophils (31%),
+                                        decreased calcium (29%), decreased sodium (27%), increased aspartate
+                                        aminotransferase (26%), increased alkaline phosphatase (24%), arthralgia (22%),
+                                        decreased appetite (21%), increased potassium (21%), constipation (21%), and
+                                        back pain (21%).</p>
+
+                                    <p><b>
+                                            Please see full <a
+                                                href="https://www.novartis.com/us-en/sites/novartis_us/files/pluvicto.pdf">Prescribing
+                                                Information</a>.</b>
+
+                                    </p>
+                                    <div>
+                                        <img id="novartisLogo" src="shared/media/images/Novartis_logo_VM_page.png"
+                                            alt="">
+                                        <p></p>
+
+
+                                        <img id="pluvicto_logo" src="shared/media/images/brand_logo1.png" alt="">
+
+                                    </div>
+
+                                    <p class="isi_text_section"><span class="fi_rst"><b>Novartis Pharmaceuticals
+                                                Corporation</b><br>East Hanover, New Jersey 07936-1080</span> <span
+                                            class="isi_year">©2025 Novartis</span><span
+                                            class="isi_date">6/25</span><span class="isi_contentid">FA-11383644</span>
+                                    </p>
+
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="isi_close" class="popup_close btn" data-km="" data-trng="22">
+                        <svg viewBox="0 0 24 24" class="icon_svg popup_close_svg">
+                            <use href="#svg_icons_menu_close"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <video class="speaker_img_s21" playinline>
+                <source src="./media/video/VO_21.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-21.png" class="message_img_s21">
+        </div>
+        <div class="page_content" slideId="22">
+            <p class="txt_footer_1">
+                This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.
+            </p>
+            <video class="speaker_img_s22" playinline>
+                <source src="./media/video/VO_22.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-22.png" class="message_img_s22">
+            <img src="./media/images/btn_positive.png" class="btn_positive_s22 ipad_button_s22">
+            <img src="./media/images/btn_netural.png" class="btn_netural_s22 ipad_button_s22">
+            <img src="./media/images/btn_negative.png" class="btn_negative_s22 ipad_button_s22">
+            <img src="./media/images/nextBtn.png" class="button_img_s22 btn" data-km="" data-trng="23">
+        </div>
+        <div class="page_content" slideId="23">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s23" playinline>
+                <source src="./media/video/VO_23.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-23.png" class="message_img_s23">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="menu_button_img_s23 btn" data-km="" data-trng="24"></div>
+        </div>
+        <div class="page_content" slideId="24">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s24" playinline>
+                <source src="./media/video/VO_24.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-24.png" class="message_img_s24">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="popbutton_button_img_s24 btn" data-km="" data-trng="25"></div>
+            <div class="animation_button_img_s24 btn" data-km="" data-trng="25"></div>
+            <div class="toggle_button_img_s24 btn" data-km="" data-trng="25"></div>
+            <div class="video_button_img_s24 btn" data-km="" data-trng="25"></div>
+            <div class="zoomin_button_img_s24 btn" data-km="" data-trng="25"></div>
+        </div>
+        <div class="page_content" slideId="25">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s25" playinline>
+                <source src="./media/video/VO_25.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-25.png" class="message_img_s25">
+            <img src="./media/images/Slide25Modal.png" class="model_img_s25">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="toggle_button_img_s25 btn" data-km="" data-trng="26"></div>
+        </div>
+        <div class="page_content" slideId="26">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s26" playinline>
+                <source src="./media/video/VO_26.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-26.png" class="message_img_s26">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="popbutton_button_img_s26 btn" data-km="" data-trng="27"></div>
+        </div>
+        <div class="page_content" slideId="27">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s27" playinline>
+                <source src="./media/video/VO_27.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-27.png" class="message_img_s27">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="ppJames_button_img_s27 btn" data-km="" data-trng="28"></div>
+        </div>
+        <div class="page_content" slideId="28">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s28" playinline>
+                <source src="./media/video/VO_28.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-28.png" class="message_img_s28">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="videobutton_button_img_s28 btn" data-km="" data-trng="29"></div>
+        </div>
+        <div class="page_content" slideId="29">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s29" playinline>
+                <source src="./media/video/VO_29.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-29.png" class="message_img_s29">
+            <div class="video_thumbnail preview_btn videobutton_button_img" data-type="video"
+                data-target="video_sample.mp4" pop-modal="pop29">
+            </div>
+            <div id="video_popup" class="popup" style="left: 0px; opacity: 1; display: none;">
+                <video id="resource_video" class="" controls="" style="">
+                    <source id="video_src" src="shared/media/videos/video_sample.mp4" type="video/mp4">
+                </video>
+                <div id="video_close_29" class="popup_close popup_close_btn video_popup_close_btn btn" data-km=""
+                    data-trng="30">
+                    <svg viewBox="0 0 24 24" class="icon_svg popup_close_svg">
+                        <use href="#svg_icons_menu_close"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="page_content" slideId="30">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s30" playinline>
+                <source src="./media/video/VO_30.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-30.png" class="message_img_s30">
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="enlarge_button_img_s30 btn" data-km="" data-trng="31"></div>
+        </div>
+        <div class="page_content" slideId="31">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s31" playinline>
+                <source src="./media/video/VO_31.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-31.png" class="message_img_s31">
+            <div class="container">
+                <img src="./media/images/Slide31Modal.png" class="modal_img_s31">
+            </div>
+            <div class="sonar-wrapper1">
+                <div class="sonar-emitter">
+                    <div class="sonar-wave"></div>
+                    <div class="sonar-wave1"></div>
+                </div>
+            </div>
+            <div class="cancle_button_img_s31 btn" data-km="" data-trng="32"></div>
+        </div>
+        <div class="page_content" slideId="32">
+            <p class="txt_footer_1">This information is for internal use only and is not to be left with, detailed from,
+                or
+                shown to anyone outside Novartis Pharmaceuticals Corporation.</p>
+            <video class="speaker_img_s32" playinline>
+                <source src="./media/video/VO_32.mp4" type="video/mp4">
+            </video>
+            <img src="./media/images/txt/txt-32.png" class="message_img_s32">
+            <img src="./media/images/nextBtn.png" class="button_img_s32 btn" data-km="" data-trng="33">
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="./js/script.js"></script>
+
+</html>
