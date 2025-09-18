@@ -1,0 +1,23 @@
+# Dependency directory
+node_modules
+
+# IDE Project files/dirs
+.vs
+.project
+.vscode
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# MAC DS_Stores
+.DS_Store
+
+# Ignore npm log files
+npm-debug.log*
+
+# Ignore package-lock.json
+package-lock.json
+
+# Ignore zip file
+*.zip
+

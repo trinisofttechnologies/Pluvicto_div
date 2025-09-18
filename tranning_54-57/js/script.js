@@ -1,6 +1,6 @@
 var app = {};
 $(document).ready(function () {
-    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53","tranning_54-57","tranning_58-60"];
+    var ipad_route = ["tranning_1-20", "tranning_21-32", "tranning_33-53", "tranning_54-57", "tranning_58-60", "tranning_61-75", "tranning_76-83", "tranning_84-92", "tranning_93-97", "tranning_98-99"];
     var presentationID = "FA-11383644_content";
 
     app.debug = false;
