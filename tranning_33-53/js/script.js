@@ -1,4 +1,27 @@
 var app = {};
+app.set = function(key, value) {
+    if (typeof value == "object") {
+        value = JSON.stringify(value);
+    }
+    return window.localStorage.setItem(key, value);
+}
+app.get = function(key) {
+    var value = window.localStorage.getItem(key);
+    if (app.isJsonString(value)) {
+        return JSON.parse(value);
+    } else {
+        return value;
+    }
+}
+
+app.isJsonString = function(str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
 $(document).ready(function () {
     var ipad_route = ["tranning_1-20", "tranning_21-32", "tranning_33-53", "tranning_54-57", "tranning_58-60", "tranning_61-75", "tranning_76-83", "tranning_84-92", "tranning_93-97", "tranning_98-99"];
     var presentationID = "FA-11383644_content";
@@ -1533,5 +1556,10 @@ $(document).ready(function () {
             }, 3500);
         }
     }
-    loadPage(33);
+    var select_page = app.get("page");
+    if (select_page) {
+        loadPage(select_page - 1);
+    } else {
+        loadPage(33);
+    }
 });
