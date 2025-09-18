@@ -1529,16 +1529,17 @@ $(document).ready(function () {
                 $(".button_img_s96").animate({ opacity: "1", bottom: "80px" }, 1500);
             }, 3500);
         } else if (pageNo == 97) {
-            video_element = document.getElementsByClassName('speaker_img_s97')[0];
-            video_element.play();
-            $(".speaker_img_s97").animate({ opacity: "1" }, 2500);
-            $(".sonar-wrapper1").css({ "top": "220px", "left": "733px" });
-            setTimeout(function () {
-                $(".message_img_s97").animate({ opacity: "1", right: "540px" }, 1500);
-            }, 2000);
-            setTimeout(function () {
-                $(".button_img_s97").animate({ opacity: "1", bottom: "80px" }, 1500);
-            }, 3500);
+            routing_to(8);
+            // video_element = document.getElementsByClassName('speaker_img_s97')[0];
+            // video_element.play();
+            // $(".speaker_img_s97").animate({ opacity: "1" }, 2500);
+            // $(".sonar-wrapper1").css({ "top": "220px", "left": "733px" });
+            // setTimeout(function () {
+            //     $(".message_img_s97").animate({ opacity: "1", right: "540px" }, 1500);
+            // }, 2000);
+            // setTimeout(function () {
+            //     $(".button_img_s97").animate({ opacity: "1", bottom: "80px" }, 1500);
+            // }, 3500);
         } else if (pageNo == 98) {
             video_element = document.getElementsByClassName('speaker_img_s98')[0];
             video_element.play();
@@ -1566,7 +1567,13 @@ $(document).ready(function () {
     }
     var select_page = app.get("page");
     if (select_page) {
-        loadPage(select_page);
+        console.log(select_page)
+        if(select_page < 98 || select_page > 99) {
+            app.set("page", 98);
+            loadPage(98);
+        } else {
+            loadPage(select_page);
+        }
     } else {
         loadPage(98);
     }

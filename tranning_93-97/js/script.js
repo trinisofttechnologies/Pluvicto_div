@@ -1,4 +1,27 @@
 var app = {};
+app.set = function (key, value) {
+    if (typeof value == "object") {
+        value = JSON.stringify(value);
+    }
+    return window.localStorage.setItem(key, value);
+}
+app.get = function (key) {
+    var value = window.localStorage.getItem(key);
+    if (app.isJsonString(value)) {
+        return JSON.parse(value);
+    } else {
+        return value;
+    }
+}
+
+app.isJsonString = function (str) {
+    try {
+        JSON.parse(str);
+    } catch (e) {
+        return false;
+    }
+    return true;
+}
 $(document).ready(function () {
     var ipad_route = ["tranning_1-20", "tranning_21-32", "tranning_33-53", "tranning_54-57", "tranning_58-60", "tranning_61-75", "tranning_76-83", "tranning_84-92", "tranning_93-97", "tranning_98-99"];
     var presentationID = "FA-11383644_content";
@@ -1458,7 +1481,7 @@ $(document).ready(function () {
                 $(".message_img_s91").animate({ opacity: "1", right: "25px" }, 1500);
             }, 2000);
         } else if (pageNo == 92) {
-            routing_to(8);
+            routing_to(7);
             // video_element = document.getElementsByClassName('speaker_img_s92')[0];
             // video_element.play();
             // $(".speaker_img_s92").animate({ opacity: "1" }, 2500);
@@ -1517,16 +1540,17 @@ $(document).ready(function () {
                 $(".button_img_s97").animate({ opacity: "1", bottom: "80px" }, 1500);
             }, 3500);
         } else if (pageNo == 98) {
-            video_element = document.getElementsByClassName('speaker_img_s98')[0];
-            video_element.play();
-            $(".speaker_img_s98").animate({ opacity: "1" }, 2500);
-            setTimeout(function () {
-                $(".message_img_s98").animate({ opacity: "1", right: "50px" }, 1500);
-            }, 2000);
+            routing_to(9);
+            // video_element = document.getElementsByClassName('speaker_img_s98')[0];
+            // video_element.play();
+            // $(".speaker_img_s98").animate({ opacity: "1" }, 2500);
+            // setTimeout(function () {
+            //     $(".message_img_s98").animate({ opacity: "1", right: "50px" }, 1500);
+            // }, 2000);
 
-            setTimeout(function () {
-                $(".button_img_s98").animate({ opacity: "1", bottom: "80px" }, 1500);
-            }, 3500);
+            // setTimeout(function () {
+            //     $(".button_img_s98").animate({ opacity: "1", bottom: "80px" }, 1500);
+            // }, 3500);
         } else if (pageNo == 99) {
             video_element = document.getElementsByClassName('speaker_img_s99')[0];
             video_element.play();
@@ -1541,5 +1565,15 @@ $(document).ready(function () {
             }, 3500);
         }
     }
-    loadPage(93);
+    var select_page = app.get("page");
+    if (select_page) {
+        if(select_page < 93 || select_page > 97) {
+            app.set("page", 93);
+            loadPage(93);
+        } else {
+            loadPage(select_page);
+        }
+    } else {
+        loadPage(93);
+    }
 });

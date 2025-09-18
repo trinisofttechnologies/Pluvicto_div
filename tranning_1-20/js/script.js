@@ -113,11 +113,17 @@ $(document).ready(function () {
 
     $(".btn").bind(tarEvent, function () {
         var pageNo = $(this).attr("data-trng");
+        app.set("page", pageNo);
         if (pageNo == 23) {
             $(".sonar-wrappernative").css({ "display": "none" });
-        }
-        app.set("page", pageNo);
-        loadPage(pageNo);
+            loadPage(pageNo);
+        } else if (pageNo == 33) {
+            routing_to(2);
+        } else if (pageNo == 98) {
+            routing_to(98);
+        } else {
+            loadPage(pageNo);
+        } 
     });
 
     $("#ipad_button_back").bind(tarEvent, function () {
@@ -1560,9 +1566,13 @@ $(document).ready(function () {
     }
 
     var select_page = app.get("page");
-    console.log(select_page);
     if (select_page) {
-        loadPage(select_page);
+        if(select_page > 20) {
+            app.set("page", 1);
+            loadPage(1);
+        } else {
+            loadPage(select_page);
+        }
     } else {
         loadPage(1);
     }

@@ -2205,15 +2205,15 @@
 
 .sliderViewer_img_s55 {
     width: 100%;
-    bottom: -16px;
+    bottom: -24px;
     position: absolute;
 }
 
 .sliderViewer_s55 {
-    width: 104%;
+    width: 100%;
     position: absolute;
     bottom: -100px;
-    margin: -20px;
+    /* margin: -20px; */
     opacity: 0;
 }
 

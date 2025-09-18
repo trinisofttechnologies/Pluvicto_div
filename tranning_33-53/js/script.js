@@ -1041,7 +1041,7 @@ $(document).ready(function () {
         } else if (pageNo == 46) {
             $("#ipad_div_menu").css({ "opacity": "0" });
             $(".page_content[slideId='" + pageNo + "']").css({ "background": "url(./media/images/PI-Slide-46.png) no-repeat", "background-size": "100%", "display": "block" });
-            $(".sonar-wrapper2").css({ "top": "10px", "left": "20px", "opacity": "1" });
+            $(".sonar-wrapper46").css({ "top": "10px", "left": "100px", "opacity": "1" });
             $(".ipad_image_menu").css({ "display": "none" });
             $(".ipad_native_button").css({ "display": "none" });
             $(".button_close_s45").bind(tarEvent, function () {
@@ -1090,7 +1090,7 @@ $(document).ready(function () {
         } else if (pageNo == 49) {
 
         } else if (pageNo == 50) {
-            $(".sonar-wrapper1").css({ "z-index": "1", opacity: "1" });
+            $(".sonar-wrapper1").css({ opacity: "1" });
             video_element = document.getElementsByClassName('speaker_img_s50')[0];
             video_element.play();
             $(".speaker_img_s50").animate({ opacity: "1" }, 2500);
@@ -1561,7 +1561,12 @@ $(document).ready(function () {
     }
     var select_page = app.get("page");
     if (select_page) {
-        loadPage(select_page);
+        if(select_page < 33 || select_page > 53) {
+            app.set("page", 33);
+            loadPage(33);
+        } else {
+            loadPage(select_page);
+        }
     } else {
         loadPage(33);
     }

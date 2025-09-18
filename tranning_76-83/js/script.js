@@ -1565,7 +1565,12 @@ $(document).ready(function () {
     }
     var select_page = app.get("page");
     if (select_page) {
-        loadPage(select_page);
+        if(select_page < 76 || select_page > 83) {
+            app.set("page", 76);
+            loadPage(76);
+        } else {
+            loadPage(select_page);
+        }
     } else {
         loadPage(76);
     }

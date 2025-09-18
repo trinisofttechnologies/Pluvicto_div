@@ -1563,7 +1563,12 @@ $(document).ready(function () {
 
     var select_page = app.get("page");
     if (select_page) {
-        loadPage(select_page);
+        if(select_page < 21 || select_page > 32) {
+            app.set("page", 21);
+            loadPage(21);
+        } else {
+            loadPage(select_page);
+        }
     } else {
         loadPage(21);
     }

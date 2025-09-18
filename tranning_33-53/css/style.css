@@ -14,7 +14,8 @@
 .sonar-wrapper3,
 .sonar-wrapper16,
 .sonar-wrapper21,
-.sonar-wrapper45 {
+.sonar-wrapper45,
+.sonar-wrapper46 {
     position: absolute;
     display: block;
     /* z-index: 99; */
@@ -1859,7 +1860,7 @@
 .button_close_s46 {
     position: absolute;
     top: 0px;
-    left: 0px;
+    left: 79px;
     width: 70px;
     height: 50px;
     z-index: 100;
