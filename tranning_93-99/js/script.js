@@ -1379,27 +1379,27 @@ $(document).ready(function () {
         } else if (pageNo == 81) {
         } else if (pageNo == 82) {
         } else if (pageNo == 83) {
-            video_element = document.getElementsByClassName('speaker_img_s83')[0];
-            video_element.play();
-            $(".speaker_img_s83").animate({ opacity: "1" }, 2500);
-            $(".sonar-wrapper1").css({ "top": "730px", "left": "380px" });
-            setTimeout(function () {
-                $(".message_img_s83").animate({ opacity: "1", right: "60px" }, 1500);
-            }, 1000);
-        } else if (pageNo == 84) {
-            routing_to(7);
-            // video_element = document.getElementsByClassName('speaker_img_s84')[0];
+            routing_to(6);
+            // video_element = document.getElementsByClassName('speaker_img_s83')[0];
             // video_element.play();
-            // $(".speaker_img_s84").animate({ opacity: "1" }, 2500);
-            // $(".sonar-wrapper1").css({ "top": "610px", "left": "680px" });
+            // $(".speaker_img_s83").animate({ opacity: "1" }, 2500);
+            // $(".sonar-wrapper1").css({ "top": "730px", "left": "380px" });
             // setTimeout(function () {
-            //     $(".message_img_s84").animate({ opacity: "1", right: "600px" }, 1500);
-            // }, 2000);
+            //     $(".message_img_s83").animate({ opacity: "1", right: "60px" }, 1500);
+            // }, 1000);
+        } else if (pageNo == 84) {
+            video_element = document.getElementsByClassName('speaker_img_s84')[0];
+            video_element.play();
+            $(".speaker_img_s84").animate({ opacity: "1" }, 2500);
+            $(".sonar-wrapper1").css({ "top": "610px", "left": "680px" });
+            setTimeout(function () {
+                $(".message_img_s84").animate({ opacity: "1", right: "600px" }, 1500);
+            }, 2000);
 
-            // setTimeout(function () {
-            //     $(".note1_img_s84").animate({ opacity: "1", left: "455px" }, 1500);
-            //     $(".note2_img_s84").animate({ opacity: "1", left: "520px" }, 1500);
-            // }, 3000);
+            setTimeout(function () {
+                $(".note1_img_s84").animate({ opacity: "1", left: "455px" }, 1500);
+                $(".note2_img_s84").animate({ opacity: "1", left: "520px" }, 1500);
+            }, 3000);
         } else if (pageNo == 85) {
             video_element = document.getElementsByClassName('speaker_img_s85')[0];
             video_element.play();
@@ -1455,13 +1455,14 @@ $(document).ready(function () {
                 $(".message_img_s91").animate({ opacity: "1", right: "25px" }, 1500);
             }, 2000);
         } else if (pageNo == 92) {
-            video_element = document.getElementsByClassName('speaker_img_s92')[0];
-            video_element.play();
-            $(".speaker_img_s92").animate({ opacity: "1" }, 2500);
-            $(".sonar-wrapper1").css({ "top": "730px", "left": "479px" });
-            setTimeout(function () {
-                $(".message_img_s92").animate({ opacity: "1", right: "51px" }, 1500);
-            }, 2000);
+            routing_to(8);
+            // video_element = document.getElementsByClassName('speaker_img_s92')[0];
+            // video_element.play();
+            // $(".speaker_img_s92").animate({ opacity: "1" }, 2500);
+            // $(".sonar-wrapper1").css({ "top": "730px", "left": "479px" });
+            // setTimeout(function () {
+            //     $(".message_img_s92").animate({ opacity: "1", right: "51px" }, 1500);
+            // }, 2000);
         } else if (pageNo == 93) {
             video_element = document.getElementsByClassName('speaker_img_s93')[0];
             video_element.play();
@@ -1537,5 +1538,5 @@ $(document).ready(function () {
             }, 3500);
         }
     }
-    loadPage(76);
+    loadPage(93);
 });
