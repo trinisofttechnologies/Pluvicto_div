@@ -90,6 +90,7 @@ $(document).ready(function () {
 
         } else if (swipe == "swipeleft") {
             var nextSlide = slide + 1;
+            app.set("page", nextSlide);
             if (slide == 99) {
 
             } else if (skipslide.indexOf(nextSlide) == -1) {
@@ -99,6 +100,7 @@ $(document).ready(function () {
             }
         } else if (swipe == "swiperight") {
             var prevSlide = slide - 1;
+            app.set("page", prevSlide);
             if (skipslide.indexOf(prevSlide) == -1) {
                 loadPage(prevSlide, swipe)
             } else {
@@ -137,6 +139,7 @@ $(document).ready(function () {
         if (pageNo == 23) {
             $(".sonar-wrappernative").css({ "display": "none" });
         }
+        app.set("page", pageNo);
         loadPage(pageNo);
     });
 
@@ -415,7 +418,6 @@ $(document).ready(function () {
 
     var video_element, video_ele;
     function loadPage(pageNo) {
-        app.set("page", pageNo);
         $(".page_content").css({ "display": "none" });
         if (!pageNo)
             pageNo = 1;
@@ -1584,7 +1586,7 @@ $(document).ready(function () {
 
     var select_page = app.get("page");
     if (select_page) {
-        loadPage(select_page - 1);
+        loadPage(select_page);
     } else {
         loadPage(54);
     }
