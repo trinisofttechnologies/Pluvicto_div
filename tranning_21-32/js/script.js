@@ -683,8 +683,10 @@ $(document).ready(function () {
         } else if (pageNo == 21) {
             enable_disable_Laser(false, "page_content_20");
             $(".sonar-wrappernative").css({ "display": "none" });
-            video_element = document.getElementsByClassName('speaker_img_s21')[0];
-            video_element.play();
+            setTimeout(function () {
+                video_element = document.getElementsByClassName('speaker_img_s21')[0];
+                video_element.play();
+            }, 1000);
             $(".speaker_img_s21").animate({ opacity: "1" }, 1500);
             setTimeout(function () {
                 var popup_name = "isi_popup";

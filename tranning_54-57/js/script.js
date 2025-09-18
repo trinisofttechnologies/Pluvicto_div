@@ -1,6 +1,6 @@
 var app = {};
 $(document).ready(function () {
-    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53","tranning_54-57"];
+    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53","tranning_54-57","tranning_58-60"];
     var presentationID = "FA-11383644_content";
 
     app.debug = false;
@@ -37,7 +37,7 @@ $(document).ready(function () {
     const page_contents2 = document.getElementById('page_content_52');
     const touchCursor = document.getElementById('touchCursor');
 
-    var skipslide = [43, 44, 49]
+    var skipslide = [43, 44, 49, 56]
     function loadPageDynamic(slide, swipe) {
         // console.log(slide, swipe);
         if ((slide == 52 && mousemoveFlag == "ON") || (slide == 20 && mousemoveFlag == "ON")) {
@@ -1133,7 +1133,7 @@ $(document).ready(function () {
             video_element.play();
             $(".speaker_img_s54").animate({ opacity: "1" }, 2500);
             $(".sonar-wrappernative").css({ "display": "none" });
-            $(".sonar-wrapper1").css({ "top": "727px", "left": "80px" });
+            $(".sonar-wrapper1").css({ "top": "730px", "left": "93px" });
             setTimeout(function () {
                 $(".message_img_s54").animate({ opacity: "1", right: "220px" }, 1500);
             }, 1000);

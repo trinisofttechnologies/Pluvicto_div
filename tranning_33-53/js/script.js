@@ -866,7 +866,7 @@ $(document).ready(function () {
             flag_2 = false;
 
             $(".sonar-wrappernative").css({ "top": "0px", "left": "-10px", "display": "block" });
-            $(".sonar-wrapper2").css({ "top": "35px", "left": "137px", "display": "none" });
+            $(".sonar-wrapper2").css({ "top": "35px", "left": "137px", "opacity": "0" });
             setTimeout(function () {
                 $(".message_img_s35").animate({ opacity: "1", right: "210px" }, 1500);
                 $(".note1_img_s35").animate({ opacity: "1", left: "1px" }, 1500);
@@ -1056,7 +1056,7 @@ $(document).ready(function () {
             if (content_height > wrapper_height) {
                 $(`#${popup_name} .popup_content_wrapper`).addClass("popup_scroll_props");
                 popup_scroll = new IScroll($(`#${popup_name} .popup_content_wrapper`)[0], scroll_properties);
-                $(".sonar-wrapper1").css({ "top": "210px", "left": "890px", "z-index": "101" });
+                $(".sonar-wrapper1").css({ "top": "210px", "left": "890px" });
                 popup_scroll.on('scrollEnd', function () {
                 });
 
