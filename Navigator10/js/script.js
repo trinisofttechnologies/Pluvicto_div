@@ -23,7 +23,7 @@ app.isJsonString = function (str) {
     return true;
 }
 $(document).ready(function () {
-    var ipad_route = ["tranning_1-20", "tranning_21-32","tranning_33-53","tranning_54-57","tranning_58-60","tranning_61-75","tranning_76-83","tranning_84-92","tranning_93-97","tranning_98-99"];
+    var ipad_route = ["Navigator1", "Navigator2", "Navigator3", "Navigator4", "Navigator5", "Navigator6", "Navigator7", "Navigator8", "Navigator9", "Navigator10"];
     var presentationID = "FA-11383644_content";
 
     app.debug = false;
