@@ -32,6 +32,7 @@ function scale_content() {
     // scale_element = document.getElementsByTagName("body")[0];
     scale_element = document.getElementsByClassName("container")[0];
     var scale_menu = document.getElementById("ipad_div_menu");
+    var sonar_div = document.getElementById("sonar_div_menu");
     //landscape
     if (window_width > window_height) {
 
@@ -62,9 +63,17 @@ function scale_content() {
                 scale_menu.style.left = menu_left + "px";
                 scale_menu.style.top = menu_top + "px";
             }
+            if (sonar_div) {
+                sonar_div.style.left = menu_left + "px";
+                sonar_div.style.top = menu_top + "px";
+            }
         } else {
             if (scale_menu) {
                 scale_menu.style.left = 51 * scale + "px";
+            }
+
+            if (sonar_div) {
+                sonar_div.style.left = 51 * scale + "px";
             }
         }
         scale_element.style.top = "0";
@@ -96,6 +105,10 @@ function scale_content() {
             scale_menu.style.left = "114px";
         }
 
+        if (sonar_div) {
+            sonar_div.style.left = "114px";
+        }
+
     }
 
     setTimeout(function () {
@@ -122,6 +135,10 @@ function scale_content() {
     $(".container").css({ overflow: "hidden", position: "absolute" });
     if (scale_menu) {
         scale_menu.style.transform = "scale(" + scale + ")";
+    }
+
+    if (sonar_div) {
+        sonar_div.style.transform = "scale(" + scale + ")";
     }
 }
 // END of responsive code

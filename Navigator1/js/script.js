@@ -34,6 +34,8 @@ $(document).ready(function () {
         app.debug = true;
     }
 
+    app.debug = false;
+
     function getUserID(result) {
         app.debug = !result.success;
     }
