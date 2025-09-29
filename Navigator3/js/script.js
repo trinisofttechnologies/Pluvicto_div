@@ -24,7 +24,7 @@ app.isJsonString = function(str) {
 }
 $(document).ready(function () {
     var ipad_route = ["Navigator1", "Navigator2", "Navigator3", "Navigator4", "Navigator5", "Navigator6", "Navigator7", "Navigator8", "Navigator9", "Navigator10"];
-
+    var presentationID = "FA-11383644_content";
     app.debug = false;
     try {
         com.veeva.clm.getDataForCurrentObject("User", "ID", getUserID);

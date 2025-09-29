@@ -731,6 +731,7 @@ $(document).ready(function () {
             $("#isi_content_wrapper").bind(tarEvent, function () {
                 $(".sonar-wrapper21").animate({ opacity: "0" }, 1500);
             });
+            $(".sonar-wrappernative").css({"display": "none" });
         } else if (pageNo == 22) {
             video_element = document.getElementsByClassName('speaker_img_s22')[0];
             video_element.play();
@@ -752,9 +753,8 @@ $(document).ready(function () {
                     $(".button_img_s22").animate({ opacity: "1", bottom: "80px" }, 1500);
                 }, 2500);
             }
-
-
         } else if (pageNo == 23) {
+            $(".sonar-wrappernative").css({"display": "none" });
             video_element = document.getElementsByClassName('speaker_img_s23')[0];
             video_element.play();
             $(".speaker_img_s23").animate({ opacity: "1" }, 1500);

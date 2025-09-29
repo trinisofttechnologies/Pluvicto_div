@@ -1285,7 +1285,7 @@ $(document).ready(function () {
             }, 2000);
             setTimeout(function () {
                 loadPage(65);
-            }, 10000);
+            }, 12000);
         } else if (pageNo == 65) {
             video_element = document.getElementsByClassName('speaker_img_s65')[0];
             video_element.play();

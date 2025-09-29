@@ -634,6 +634,7 @@ $(document).ready(function () {
                 $(".message_img_s15").animate({ opacity: "1", left: "110px" }, 2000);
                 // $(".message_img").animate({ left: "34vh" }, 1000);
             }, 1000);
+            $(".NavigatorImg_img_s16").animate({ opacity: "0", bottom: "-600px" }, 1000);
         } else if (pageNo == 16) {
             $(".sonar-wrapper16").css({ "display": "none" });
             video_element = document.getElementsByClassName('speaker_img_s16')[0];
@@ -645,7 +646,7 @@ $(document).ready(function () {
 
             setTimeout(function () {
                 $(".sonar-wrapper16").css({ "top": "533px", "left": "23px", "display": "block" });
-            }, 3500);
+            }, 3000);
 
             setTimeout(function () {
                 $(".NavigatorImg_img_s16").animate({ opacity: "1", bottom: "-500px" }, 2000);
@@ -675,6 +676,7 @@ $(document).ready(function () {
                 loadPage(18);
             });
             $(".sonar-wrappernative").css({ "display": "none" });
+            $(".NavigatorImg_img_s16").animate({ opacity: "0", bottom: "-600px" }, 1000);
         } else if (pageNo == 18) {
             video_element = document.getElementsByClassName('speaker_img_s18')[0];
             video_element.play();
