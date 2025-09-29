@@ -394,6 +394,7 @@ $(document).ready(function () {
 
     var video_element, video_ele;
     function loadPage(pageNo) {
+        console.log(pageNo);
         $(".page_content").css({ "display": "none" });
         if (!pageNo)
             pageNo = 1;

@@ -34,7 +34,7 @@ $(document).ready(function () {
         app.debug = true;
     }
 
-    app.debug = false;
+    // app.debug = false;
 
     function getUserID(result) {
         app.debug = !result.success;
@@ -403,6 +403,7 @@ $(document).ready(function () {
 
     var video_element, video_ele;
     function loadPage(pageNo) {
+        console.log(pageNo);
         $(".page_content").css({ "display": "none" });
         if (!pageNo)
             pageNo = 1;

@@ -109,6 +109,17 @@
     opacity: 0;
 }
 
+#sonar_div_menu {
+    position: fixed;
+    width: 75px;
+    opacity: 1;
+    top: 26px;
+    left: 118px;
+    /* display: none; */
+    z-index: 1;
+    opacity: 1;
+}
+
 /*laser pointer*/
 #laserDot {
     width: 15px;
